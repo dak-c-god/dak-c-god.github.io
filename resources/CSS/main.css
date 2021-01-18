@@ -109,13 +109,15 @@ min-width: 116px;
 }
 
 #top-nav li > a:active{
-    opacity: .5;
+    /* opacity: .5; */
     border: none;
     background-color: #A0CA0C;
+    color: #ffffff;
 }
 
 /* Banner Section */
-#about {
+#about,
+#contact {
     min-height: 100vh;
     width: 100vw;
     position: relative;
@@ -127,7 +129,8 @@ min-width: 116px;
     
 }
 
-#about .banner-blurb {
+#about .banner-blurb,
+#contact .contact-form-container {
     grid-column: 2;
     grid-row: 2;
     background-color: #262626;
@@ -273,4 +276,85 @@ div.showcase-veil p {
     font-size: 2.2rem;
     padding-top: 1rem;
     letter-spacing: .2rem;
+}
+
+/* contact section */
+#contact-page-container{
+    height: 50vh;
+    position: relative;
+    top: 0;
+}
+
+
+
+#contact div.contact-form-container {
+    display: grid;
+    grid-template-rows: .5fr 2fr;
+    max-height: 100%;
+    grid-gap: 2.5rem;
+
+}
+
+#contact div.contact-form-container h2 {
+    align-self: center;
+    text-align: center;
+    width: 70%;
+    padding: 1.5rem 2rem;
+    margin: 0 auto;
+    font-size: 2.8rem;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    font-family: monospace;
+}
+#contact div.contact-form-container label{
+    font-family: monospace;
+    justify-self: start;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+#contact div.contact-form-container form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+#contact div.contact-form-container input,
+#contact div.contact-form-container textarea {
+    padding: 1.5rem;
+    border-radius: 2rem;
+    background-color: #262626;
+    border: 3px solid #ffffff;
+    color: white;
+    font-size: 2rem;
+}
+
+#contact div.contact-form-container textarea {
+    overflow: scroll;
+}
+
+#contact div.contact-form-container input.btn-submit{
+    margin-top: 2.5rem;
+    width: 70%;
+    align-self: center;
+    justify-self: center;
+    font-family: monospace;
+
+
+}
+
+#contact div.contact-form-container input.btn-submit:hover,
+#contact div.contact-form-container input.btn-submit:focus{
+    background-color: #ffffff;
+    color: #262626;
+    width: 100%;
+    transition: all .25s linear;
+
+}
+
+#contact div.contact-form-container input.btn-submit:active{
+    border: none;
+    background-color: #A0CA0C;
+    color: #ffffff;
 }
