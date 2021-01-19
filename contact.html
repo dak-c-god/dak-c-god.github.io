@@ -12,7 +12,8 @@
     <title>Dakotah Godfrey | Freelance Web Developer</title>
 </head>
 <body>
-    <header class="main-header">
+    <main id="testing">
+        <header class="main-header">
         <section id="logo">
             <div>
                 <p>D</p>
@@ -24,30 +25,34 @@
         <nav id="top-nav" class="nav-primary">
             <ul>
                 <li><a href="/index.html#about">About Me</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
+                <li><a class="skills" href="index.html#skills">Skills</a></li>
                 <li><a href="index.html#projects">Projects</a></li>
                 <li><a href="/contact.html">Hire Me</a></li>
             </ul>
         </nav>
     
-    </header>
-    <main id="contact-page-container">
+        </header>
+   
         <section id="contact">
-            <div class="contact-form-container">
-                <h2>Get in Touch</h2>
+            <article id="requestForm">
+                <h2>Send me a message</h2>
                 <form action="">
                     <label for="fname">Your First Name:</label>
-                    <input type="text" id="fname" name="fname" required>
+                    <input type="text" id="fname" name="fname" required ">
                     <label for="lname">Your Last Name:</label>
-                    <input type="text" name="lname" id="lname" required>
+                    <input type="text" name="lname" id="lname" required >
                     <label for="proj-desc" >A Brief description of your project:</label>
                     <textarea name="proj-desc" id="proj-desc" cols="30" rows="5" required></textarea>
                     <input class="btn-submit" type="submit" value="Submit">
-
                 </form>
-            </div>
-        </section>
+            </article>
+                <article id="socials">
+                    <h2>I can also be found @</h2>
+                    <a href="https://www.linkedin.com/in/dakotah-godfrey-2186091ab" target="_blank" class="iconLinkedin"><i class="fab fa-linkedin-in fa-5x"></i></a>
+                    <a href="https://github.com/dak-c-god" target="_blank" class="github"><i class="fab fa-github fa-5x"></i></a>
+                    <a href="https://codepen.io/dakotah-godfrey" target="_blank" class="codepen"><i class="fab fa-codepen fa-5x" ></i></a>
+                </article>
+        </section>    
     </main>
-    
 </body>
 </html>
